@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import Post
+from .models import Post
 
 @admin.register(Post) #tu rejestruję model Post w panelu admina
 class PostAdmin(admin.ModelAdmin):
