@@ -1,0 +1,8 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <h1>{{ object.title }}</h1>
+    <p class="text-muted">Autor: {{ object.author }} | {{ object.published_at }}</p>
+    <hr>
+    <div class="lead">{{ object.content|linebreaks }}</div>
+    <a href="{% url 'post_list' %}" class="btn btn-secondary mt-3">Powrót</a>
+{% endblock %}
